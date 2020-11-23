@@ -1,0 +1,33 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioManager : MonoBehaviour
+{
+    public Sound [] sounds;
+    // Start is called before the first frame update
+    void Start()
+    {
+         foreach (Sound s in sounds)
+        {
+            s.audioSource = gameObject.AddComponent<AudioSource>();
+            s.audioSource.clip = s.audio;
+            s.audioSource.loop = s.isLoop;
+        }
+        playsound("MainTheme");
+        
+    }
+      public void playsound(string name){
+        foreach (Sound s in sounds)
+        {
+           if(s.name == name){
+               s.audioSource.Play();
+           }
+        }
+
+        
+
+    }
+
+
+}

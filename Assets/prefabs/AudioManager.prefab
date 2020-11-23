@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4756915978701347366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4756915978701347364}
+  - component: {fileID: 4756915978701347367}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4756915978701347364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4756915978701347366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.93392664, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4756915978701347367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4756915978701347366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c6a7415b3488647a89c67dbdc47d8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: MainTheme
+    audio: {fileID: 8300000, guid: 9d1e6911375e2bc409596d9181f97a8e, type: 3}
+    volume: 0.4
+    isLoop: 1
+    audioSource: {fileID: 0}
+  - name: Collect
+    audio: {fileID: 8300000, guid: a0e01e259d2432545a7ecad872dc1081, type: 3}
+    volume: 0.6
+    isLoop: 0
+    audioSource: {fileID: 0}
+  - name: GameOver
+    audio: {fileID: 8300000, guid: a23788f27f47e774c9d3bc3272575762, type: 3}
+    volume: 0.4
+    isLoop: 0
+    audioSource: {fileID: 0}
+  - name: obstacle
+    audio: {fileID: 8300000, guid: 55dce2a185afd954c8acc05843c5a1e6, type: 3}
+    volume: 0.4
+    isLoop: 0
+    audioSource: {fileID: 0}
